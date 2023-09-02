@@ -37,7 +37,7 @@ submit.addEventListener('click', (event) => {
         document.body.style.backgroundImage = 'url(sunny.jpg)';
       } else if (info.textContent === 'Light rain' || info.textContent === 'Moderate rain' 
       || info.textContent === 'Moderate rain at times' || info.textContent === 'Light drizzle'
-      || info.textContent === 'Patchy rain possible' || info.textContent === 'Patch light rain'
+      || info.textContent === 'Patchy rain possible' || info.textContent === 'Patchy light rain'
       || info.textContent === 'Light rain shower' || info.textContent === 'Light freezing rain') {
         document.body.style.backgroundImage = 'url(light-rain.jpg)';
       } else if (info.textContent === 'Partly cloudy') {
@@ -54,7 +54,7 @@ submit.addEventListener('click', (event) => {
       || info.textContent === 'Moderate or heavy rain shower' || info.textContent === 'Moderate or heavy rain shower'
       || info.textContent === 'Moderate or heavy freezing rain' || info.textContent === 'Heavy rain'
       || info.textContent === 'Heavy rain at times' || info.textContent === 'Thundery outbreaks possible'
-      || info.textContent === 'Light freezing rain') {
+      || info.textContent === 'Light freezing rain' || info.textContent === 'Patchy light rain with thunder') {
         document.body.style.backgroundImage = 'url(thunderstorm.jpg)';
       }
     }).catch((err) => alert('Something went wrong, Your location cannot be found.'));
