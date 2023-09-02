@@ -1,0 +1,266 @@
+.container{
+  width: 1600px;
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 400px 1fr;
+  margin-top: 20px;
+}
+
+.footer{
+  height: 300px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  border-top: 3px solid black;
+  justify-content: center;
+  column-gap: 150px;
+  grid-column: 1/3;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('/src/AL_Nevrada_PersonalUseOnly.ttf') format('woff2'),
+    url('/src/AL_Nevrada_PersonalUseOnly.ttf') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+header{
+  font-size: 50px;
+  font-weight: bolder;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  font-family: 'MyFont';
+ display: flex;
+ align-items: center;
+ height: 50px;
+ border-radius: 20px;
+ padding: 30px 30px 0px 30px;
+ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+body{
+  background-image: url(/dist/clouds-beautiful-field-with-mountains-cool-background.jpg);
+  background-size: 1960px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+form{
+  height: 50px;
+  width: 600px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 180px;
+}
+
+#location, #submit{
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border: none;
+}
+
+#location{
+  width: 500px;
+  
+}
+
+#info-icon{
+  background-image: url(/dist/cloudy_1604499.png);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 300px;
+  display: inline-block;
+  align-self: center;
+  border-bottom: 3px solid black;
+}
+
+#city-icon{
+  background-image: url(/dist/city_1068530.png);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 300px;
+  display: inline-block;
+  align-self: center;
+  border-bottom: 3px solid black;
+}
+
+#temp-icon{
+  background-image: url(/dist/hot_1684375.png);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 300px;
+  display: inline-block;
+  align-self: center;
+  border-bottom: 3px solid black;
+}
+
+#kmh-icon{
+  background-image: url(/dist/windsock_6421118.png);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 300px;
+  display: inline-block;
+  align-self: center;
+  border-bottom: 3px solid black;
+}
+
+#humidity-icon{
+  background-image: url(/dist/humidity.png);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 50px;
+  display: inline-block;
+  align-self: center;
+ border-left: 3px solid black;
+}
+
+#pressure-icon{
+  background-image: url(/dist/pressure.png);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 50px;
+  display: inline-block;
+  align-self: center;
+  border-left: 3px solid black;
+}
+
+#country-icon{
+  background-image: url(/dist/country.png);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 50px;
+  display: inline-block;
+  align-self: center;
+ border-left: 3px solid black;
+}
+
+#region-icon{
+  background-image: url(/dist/region.png);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 50px;
+  display: inline-block;
+  align-self: center;
+  border-left: 3px solid black;
+}
+
+.info-container{
+  width: 300px;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  justify-self: center;
+  
+}
+
+h3,h1{
+  
+  background: rgba(0, 0, 0, 0.55);
+  padding: 15px 15px;
+  color: white;
+  margin: 0;
+  font: 24px Sans-Serif;
+  align-self: center;
+  border-left: 1px solid black;
+  font-weight: bolder;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+img{
+  justify-self: flex-end;
+}
