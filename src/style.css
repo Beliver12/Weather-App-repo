@@ -42,7 +42,6 @@ header{
 }
 
 body{
-  background-image: url(/dist/clouds-beautiful-field-with-mountains-cool-background.jpg);
   background-size: 1960px;
   display: flex;
   flex-direction: column;
