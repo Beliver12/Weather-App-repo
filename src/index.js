@@ -1,6 +1,7 @@
 /* eslint-disable prefer-arrow-callback */
 import './style.css';
 
+
 const locationn = document.getElementById('location');
 const submit = document.getElementById('submit');
 const img = document.querySelector('img');
